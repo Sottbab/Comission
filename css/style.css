@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/*전체초기화*/
+*{
+  margin:0px; padding:0px;
+  font-family:'나눔고딕';
+}
+li{list-style:none;}
+img{display: block;}
+a{text-decoration: none; display: block; color:inherit;}
+
+/*영역*/
+.container{
+  width:1200px; height:2000px;
+  margin: auto;
+  /*전체 영역*/
+}
+
+/*머릿말,꼬릿말*/
+header{
+  width:1200px; height:100px;
+  /* background-color:aliceblue; */
+  clear:both; 
+}
+/*로고*/
+.logo{
+  width:200px; 
+  float:left;
+}
+.logo>a{margin:10px 0px;}
+
+/*메뉴*/
+nav{width:1000px; float:left;}
+.menu{float:right; margin-top:60px;}
+.menu>li{float:left;}
+.menu>li>a{
+    width:180px;
+    height:40px; line-height: 40px;
+    color: dodgerblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*대문 슬라이드*/
+.slide{
+  height:400px;
+  overflow: hidden;
+  position: relative;
+  /* background-color:skyblue; */
+}
+.slide>h1{
+  position:absolute;
+  font-size:200px;
+  font-family:'Brush Script MT';
+  font-weight:100;
+  color:white;
+  width:1200px; height:360px;
+  background-color:rgba(0,0,0,0.5);
+  text-align: center;
+  line-height:360px;
+  margin:20px 0;
+}
+
+/*슬라이드 필름, 이미지*/
+.film{
+  width:3600px;
+  height:1200px;
+ 
+}
+.film li{float:left;}
+
+/*바로가기*/
+.shortcut{
+  height:300px;
+  /* background-color:steelblue; */
+}
+.shortcut>article{
+  float:left;
+  width:400px;
+  height:260px; 
+  margin: 20px 0;
+}
+
+.pre_notice>ul{
+    margin:20px;
+    margin-top:50px;
+}
+.pre_notice>ul>li>a{
+    height:40px;
+    line-height: 180%;
+    text-overflow: ellipsis;
+    width:320px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*바로가기*/
+.direct>a{
+    width:133px;
+    height:50px;
+    margin:30px 0;
+    float:left;
+    text-align: center;
+    color:dodgerblue;
+}
+.direct i{display: block; margin:10px auto; color:skyblue;}
+.direct>a:hover{
+    transform:scale(1.05);
+}
+.direct>a:active{
+    transform: none;
+    color:dodgerblue;
+}
+.direct i:active{
+    color:dodgerblue;
+}
+
+/*슬롯*/
+.slots>h4{
+    width:100px;
+    margin:10px;
+}
+.slots>p{
+    margin:10px;
+}
+
+.slot_box{
+    width:330px;
+    margin:auto;
+}
+.slot{
+    border-radius: 50%;
+    width:50px; height:50px;
+    float:left;
+    border:5px solid dodgerblue;
+    margin:10px 20px;
+}
+.slot.active{ /*슬롯 채워질때 slot 클래스 옆에 active 표시하기*/
+    background-color:dodgerblue;
+}
+
+/*샘플*/
+.sample{
+    display: none;
+
+  width:1200px; height:400px;
+  /* background-color:skyblue; */
+  float:left;
+  position:relative;
+    overflow: hidden;
+}
+.sample article{float:left; height:350px; }
+
+/*샘플 이미지*/
+.ample{
+  width:1200px; overflow: hidden;
+  position:absolute;
+  z-index:-3;
+  
+}
+.ample>h2{ /*샘플 표시판*/
+  width:1100px; height:30px;
+  float:left;
+  position:absolute;
+  z-index: 1;
+  top:200px; left:0px; padding-left:100px;
+  box-sizing: content-box;
+  color:white;
+  background-color:rgba(0,0,0,0.5);
+  text-align: left;
+  /* font-family: '나눔고딕'; */
+}
+.cartoon{display: none;} /*기본 설정- 만화 탭 숨김*/
+
+/*해설*/
+.explain{
+  width:400px;
+  position:absolute;
+  top:0px;
+  left:1200px; 
+/*   transform:translateX(100%);*/
+  background-color:rgba(0,0,0,0.8);
+  /* font-family: '나눔고딕'; */
+  color:white;
+}
+.explain>h2{ 
+  /*해설 제목*/
+  color:inherit; font-family:inherit; 
+  position:absolute;
+  left:40px; top:30px;
+}
+
+.explain>hr{
+  /* 구분선 */
+  border-color:white;
+  position:absolute;
+  top:50px; right:0px;
+  width:340px; margin:30px;
+}
+
+.price{
+  /* 가격 */
+  position:absolute;
+  width:600px; height:250px;
+  top:100px; left:30px;
+  /* font-family: '나눔고딕'; */
+}
+.price>li{
+  margin:20px 10px; 
+  line-height:30px;
+  font-family: inherit;
+  /* 한줄간격 */
+}
+.price>li:first-child{margin-top:0px}
+.price>li>h3{
+  /* font-family:'나눔고딕'; */
+  margin:2px 0;}/* 타입 */
+
+.price>li>ul>li{
+  /* 가격 한줄 */
+  width:250px;
+  line-height:150%;
+  /* font-family: '나눔고딕'; */
+}
+.price>li>ul>li>span{
+  float:right; 
+  /* font-family: '나눔고딕'; */
+}
+
+/*샘플 버튼*/
+.tab_title{width:300px; height:30px;}
+.sample>.tab_title{
+  position:absolute;
+  left:550px; top:360px;
+}
+.tab_title>button{
+  width:15px; height:15px; 
+  margin:0 10px;
+  background-color:white;
+  border:3px solid rgb(218, 54, 87);
+  float:left;
+  color:rgb(218, 54, 87); font-weight: bold;
+  border-radius: 50%;
+}
+.tab_title>button:hover{
+  background-color:rgba(218, 54, 87, 0.747);
+  color:white;
+}
+.tab_title>button.active{
+  background-color:rgb(218, 54, 87);
+  color:white;
+}
+
+/*공지*/
+.notice{
+    display: none;
+    height:400px; position:relative;
+    clear:both;
+}
+.notice>article{
+  float:left; width:540px; height:400px;
+  text-align: justify;
+}
+
+.notice h2{margin:30px; margin-left:10px;}
+.guide>ul{margin:30px; margin-top:-10px;}
+.guide>ul li{text-align: justify;}
+
+.notice article li{
+  list-style-type:circle;
+  line-height:175%;
+  width:480px;
+}
+.attention{
+  padding-left:100px; 
+  box-sizing: content-box;
+}
+.attention>ul{margin-top:70px;}
+.attention>ul>li{list-style-type:none; margin-top:30px;}
+.contact{
+    display: none;
+  /* 연락처 신청양식 */
+  height:300px;
+  /* background-color:thistle; */
+  padding-right:100px;
+  
+}
+
+
+.mails{
+    float:left;
+    margin-top:175px;
+}
+
+.mails>h3,.mails li{
+    margin:20px;
+    width:400px;
+}
+
+.request{
+    float:left;
+    width:600px;
+    height:300px;
+/*    background-color:aliceblue;*/
+}
+.request li{
+    margin:20px;
+}
+
+footer{
+     width:600px; height:100px;
+    line-height:200px;
+    text-align: left;
+    font-size:0.8em;
+    color:gray;
+}
+
+.to_top{
+    display: none;
+    position:sticky;
+    left:99%; bottom:0px;
+    width:30px; height:30px;
+    border-radius: 50%;
+    border:none;
+    background:none;
+    
+}
+
+.to_top i{
+    color:skyblue;
+}
