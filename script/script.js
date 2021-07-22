@@ -53,5 +53,7 @@ $(document).ready(function(){
     $('.menu li,.pre_notice>ul>li>a,.direct>a').mouseover(function(){
         $('.notice,.sample,.contact').show();
     });
-    
+     $('.menu li,.pre_notice>ul>li>a,.direct>a').click(function(){
+          $('.explain').animate({left:'800px'},400);
+    });
 });
