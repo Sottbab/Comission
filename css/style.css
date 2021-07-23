@@ -9,9 +9,17 @@ li{list-style:none;}
 img{display: block;}
 a{text-decoration: none; display: block; color:inherit;}
 
+hr{border:none; background-color:aliceblue; height:1.5px;}
+body{
+    background-color:rgba(240, 248, 255, 0.51);
+    background-image: url(../image/background.png);
+    background-size: cover;
+    height:100%;
+}
+
 /*영역*/
 .container{
-  width:1200px; height:2000px;
+  width:1200px; height:2250px;
   margin: auto;
   /*전체 영역*/
 }
@@ -36,7 +44,7 @@ nav{width:1000px; float:left;}
 .menu>li>a{
     width:180px;
     height:40px; line-height: 40px;
-    color: dodgerblue;
+    color: aliceblue;
     text-align: center;
     font-weight: bold;
 }
@@ -75,6 +83,7 @@ nav{width:1000px; float:left;}
   /* background-color:steelblue; */
 }
 .shortcut>article{
+  color:aliceblue;
   float:left;
   width:400px;
   height:260px; 
@@ -101,9 +110,9 @@ nav{width:1000px; float:left;}
     margin:30px 0;
     float:left;
     text-align: center;
-    color:dodgerblue;
+    color:aliceblue;
 }
-.direct i{display: block; margin:10px auto; color:skyblue;}
+.direct i{display: block; margin:10px auto; color:aliceblue;}
 .direct>a:hover{
     transform:scale(1.05);
 }
@@ -132,11 +141,11 @@ nav{width:1000px; float:left;}
     border-radius: 50%;
     width:50px; height:50px;
     float:left;
-    border:5px solid dodgerblue;
+    border:5px solid aliceblue;
     margin:10px 20px;
 }
 .slot.active{ /*슬롯 채워질때 slot 클래스 옆에 active 표시하기*/
-    background-color:dodgerblue;
+    background-color:aliceblue;
 }
 
 /*샘플*/
@@ -148,6 +157,8 @@ nav{width:1000px; float:left;}
   float:left;
   position:relative;
     overflow: hidden;
+    margin:10px;
+    
 }
 .sample article{float:left; height:350px; }
 
@@ -237,17 +248,17 @@ nav{width:1000px; float:left;}
   width:15px; height:15px; 
   margin:0 10px;
   background-color:white;
-  border:3px solid rgb(218, 54, 87);
+  border:3px solid dodgerblue;
   float:left;
   color:rgb(218, 54, 87); font-weight: bold;
   border-radius: 50%;
 }
 .tab_title>button:hover{
-  background-color:rgba(218, 54, 87, 0.747);
+  background-color:#8ec7ff;
   color:white;
 }
 .tab_title>button.active{
-  background-color:rgb(218, 54, 87);
+  background-color:dodgerblue;
   color:white;
 }
 
@@ -256,9 +267,17 @@ nav{width:1000px; float:left;}
     display: none;
     height:400px; position:relative;
     clear:both;
+    padding:30px;
+    background-color:rgba(240, 248, 255, 0.43);
+    color:#0b0b7b;
+    border:2px dotted aliceblue; 
+    border-bottom:none;
+/*    color:dodgerblue;*/
+    
 }
 .notice>article{
-  float:left; width:540px; height:400px;
+  box-sizing: content-box;
+  float:left; width:500x; height:400px;
   text-align: justify;
 }
 
@@ -282,8 +301,11 @@ nav{width:1000px; float:left;}
   /* 연락처 신청양식 */
   height:300px;
   /* background-color:thistle; */
-  padding-right:100px;
-  
+    padding:30px;
+    background-color:rgba(240, 248, 255, 0.43);
+    color:#0b0b7b;
+  border:2px dotted aliceblue; 
+    border-top:none;
 }
 
 
